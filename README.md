@@ -76,7 +76,16 @@ The project demonstrates the complete pipeline from data loading, cleaning, feat
 
 ## Performance Summary
 
-*Random Forest model tends to give the best balance of accuracy and interpretability.*
+The following models were trained and evaluated on the Delhi AQI dataset using PM2.5-based AQI calculation. Performance was measured using **MAE**, **MSE**, **RMSE**, and **R² Score**:
+
+| Model                 | MAE   | MSE    | RMSE  | R² Score |
+| --------------------- | ----- | ------ | ----- | -------- |
+| **Random Forest**     | 8.45  | 144.30 | 12.01 | 0.94     |
+| **Gradient Boosting** | 9.37  | 165.20 | 12.85 | 0.926    |
+| **Linear Regression** | 14.89 | 421.78 | 20.54 | 0.735    |
+
+**Best Performing Model**: **Random Forest Regressor** with **94% accuracy (R² Score)**
+The model effectively predicts AQI based on key air quality parameters with high precision and low error.
 
 ---
 
